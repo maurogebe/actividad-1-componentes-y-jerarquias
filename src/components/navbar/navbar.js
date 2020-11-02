@@ -9,18 +9,21 @@ import Login from './login'
 
 /* Importar los iconos */
 import logo from '../../icons/iconfinder_youtube_294703.png'
-import videoCall from '../../icons/iconfinder_ic_video_call_48px_3669144.png'
-import viewModule from '../../icons/iconfinder_ic_view_module_48px_3669149.png'
-import viewAlerts from '../../icons/iconfinder_icon-ios7-bell_211694.png'
+// import videoCall from '../../icons/iconfinder_ic_video_call_48px_3669144.png'
+// import viewModule from '../../icons/iconfinder_ic_view_module_48px_3669149.png'
+// import viewAlerts from '../../icons/iconfinder_icon-ios7-bell_211694.png'
+
+// Import Icons FontAwesome
+import { faVideo, faTh, faBell } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
   return (
     <div className="navbar">
       <Logo logo={ logo } />
       <SearchBar />
-      <Icon iconUrl={videoCall} />
-      <Icon iconUrl={viewModule} />
-      <Icon iconUrl={viewAlerts} />
+      <Icon icon={faVideo} />
+      <Icon icon={faTh} />
+      <Icon icon={faBell} />
       <Login />
 
     </div>
